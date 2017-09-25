@@ -1,0 +1,14 @@
+{
+  "name": "exchange",
+  "version": "1.0.0",
+  "description": "rate of exchange",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lev Vysojkiy\u001b[D\u001b[D\u001b[\u001b[C\u001b[C\u001b[\u001b[\u001b[C\u001b[C\u001b[kiy",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Курс валют</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Курс доллара на сегодня</h1>
+        </div>
+        <div class="content">
+            <p class="course">1 доллар США = <span id="usd"><%= usd %></span> рублей</p>
+            <%if (diff > 0) { %>
+            <p class="course">Изменение: <span style="color:green"> +<%= diff %></span></p>
+            <img class="trump" id="happy" src="../images/Trump_happy.jpg" alt=""> <% }
+            else { %>
+            <p class="course">Изменение:<span style="color:red"> <%= diff %></span></p>
+            <button class="buttons" id="refresh">Обновить</button>
+            <img class="trump" id="sad" src="../images/Trump_sad.jpg" alt=""> <% } %>
+            <div class="calc">
+                <h1>Калькулятор по текущему курсу</h1>
+                <input id="amount" type="number" value="0" min="0"
+                       onkeydown="return !((event.keyCode === 189) || (event.keyCode === 109) ||
+                       (event.keyCode === 107) || (event.keyCode === 187))">
+                <p class="output"> $(USD) = <span id="result">0.0000</span> рублей</p>
+                <button class="buttons" id="calculate">Рассчитать</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
